@@ -3,7 +3,8 @@
 ## Requirements: 
 pip install keras==2.0 tensorflow==1.0.1 h5py==2.7.0 matplotlib==1.5.3 scipy==0.19.0 pillow
 
-Skal fungere med python 2.7 og 3.x, men har opplevd at 2.7 er raskere. 
+Plotting fungerer ikke ved bruk av virtual env - så denne koden må kopieres ut. 
+Skal fungere med python 2.7 og 3.x, men har opplevd noen problemer med 3.x.  
 
 
 ## Oppgave:
