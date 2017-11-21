@@ -86,7 +86,7 @@ def create_model(w, h, number_of_classes):
         )
 
     model = Sequential()
-    for layer in vgg16.layers:
+    for layer in vgg16_model.layers:
         model.add(layer)
 
     for layer in model.layers:
