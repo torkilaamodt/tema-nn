@@ -1,7 +1,7 @@
 # Transfer learning
 
 ## Requirements: 
-sudo pip install keras tensorflow matplotlib h5py pillow
+pip install keras==2.0 tensorflow==1.0.1 h5py==2.7.0 matplotlib==1.5.3 scipy==0.19.0 pillow
 
 Skal fungere med python 2.7 og 3.x, men har opplevd at 2.7 er raskere. 
 
