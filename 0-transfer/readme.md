@@ -2,6 +2,7 @@
 
 ## Requirements: 
 sudo pip install keras tensorflow matplotlib h5py pillow
+
 Skal fungere med python 2.7 og 3.x, men har opplevd at 2.7 er raskere. 
 
 
