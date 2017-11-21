@@ -20,9 +20,8 @@ def fmeasure(y_true, y_pred):
     # Calculates the f-measure, the harmonic mean of precision and recall.
     return metrics.fbeta_score(y_true, y_pred, beta=1)
 
-import matplotlib.pyplot as plt
-import numpy as np
 def plot_training(history, t):
+    import matplotlib.pyplot as plt
     plt.plot(history[t])
     plt.plot(history['val_' + t])
     plt.title(t)
