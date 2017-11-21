@@ -86,14 +86,13 @@ def create_model(w, h, number_of_classes):
         )
 
     model = Sequential()
+    for layer in vgg16.layers:
+        model.add(layer)
 
-    # TODO
-    # Build your new model based on the vgg16 model defined above.
-    # - A model has layers that could can be added to another model.
-    # - Each layer have a property "traiable"
-    # - You can print out the network structure by calling model.summary()
+    for layer in model.layers:
+        layer.trainable = False
 
-    # model.add(Flatten())
+    model.add(Flatten())
     model.add(Dense(number_of_classes, activation="softmax"))
     model.summary()
     return model
@@ -108,7 +107,6 @@ def main():
     # Use generators to produce training data https://keras.io/preprocessing/image/
     train_generator, validation_generator = create_generators(batch_size, w, h)
 
-    # TODO Change this model
     model = create_model(w, h, number_of_classes)
 
     model.compile(
